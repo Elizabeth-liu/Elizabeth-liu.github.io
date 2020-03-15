@@ -1,5 +1,5 @@
 module.exports = {
-  dest: 'vue',
+  dest: 'Elizabeth',
   locales: {
     '/': {
       lang: 'en-US',

@@ -2,7 +2,7 @@
 
 roadhog不更新后，我把项目迁移回webpack3.x，后又升级到webpack4.x，感觉基础性的配置，脚手架等工具已经覆盖，而高级一些的功能，如dll等，在我们的中台项目中引入后效果不明显。
 
-根据官方文档引入webpack相关配置不难，对我来说比较难的是webpack与封装了webpack的工具的配合，如根据nextjs项目需求进行对应的webpack配置，并随着nextjs升级而修改配置。# 其他
+根据官方文档引入webpack相关配置不难，比较难的是webpack与封装了webpack的工具的配合，如根据nextjs项目需求进行对应的webpack配置，并随着nextjs升级而修改配置。# 其他
 
 
 
@@ -17,7 +17,7 @@ style-loader 会将 css-loader 解析的结果转变成 JS 代码，运行时动
 
 使用 webpack-dev-server 的好处是相对简单，直接安装依赖后执行命令即可，而使用 webpack-dev-middleware 的好处是可以在既有的 Express 代码基础上快速添加 webpack-dev-server 的功能，同时利用 Express 来根据需要添加更多的功能，如 mock 服务、代理 API 请求等。 -->
 
-
+<!--
 
 https://segmentfault.com/a/1190000015822824
 
@@ -116,4 +116,4 @@ UI 组件库 chunk-elementUI
 使用 NamedChunkPlugin结合自定义 nameResolver 来固定 chunkId
 
 
- -->
+ --> -->
