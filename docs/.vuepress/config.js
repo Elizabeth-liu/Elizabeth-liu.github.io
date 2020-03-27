@@ -3,7 +3,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'vue',
+      title: 'Elizabeth',
       description: 'Vue-powered Static Site Generator'
     },
     // '/zh/': {
@@ -104,7 +104,8 @@ module.exports = {
           '/web/browser/': [
             '',
             'cache',
-            'router'
+            'router',
+            'cookie'
           ],
           '/web/babel/': [
             '',

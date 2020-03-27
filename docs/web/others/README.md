@@ -1,5 +1,13 @@
 # 其他
 
+## 浮点数精度
+0.1 + 0.2 !== 0.3
+原因是十进制转二进制存储时精读丢失
+
+参考资料：
+https://github.com/mqyqingfeng/Blog/issues/155
+
+
 npx
 http://www.ruanyifeng.com/blog/2019/02/npx.html
 
@@ -98,7 +106,7 @@ http://blog.csdn.net/waiterwaiter/article/details/50267787
 
 https://www.zhihu.com/question/23031215
 
-## 找出数组重复项
+<!-- ## 找出数组重复项
    假设var arr = ['aaa', 'aaa', 'aaa', 'aaa', 'aaa', 'bbb', 'bbb', 'bbb', 'ccc', 'ccc']
        var length = arr.length
        var positions = []
@@ -128,7 +136,7 @@ itemTimes = {...itemTimes, arr[0]: positions[0]+1}  // 第一项
 其他方法有：正则等
 
 参考资料：
-http://www.jb51.net/article/86017.htm
+http://www.jb51.net/article/86017.htm -->
 
 
 
@@ -137,8 +145,8 @@ http://www.jb51.net/article/86017.htm
 ## ElementUI的构建流程
 https://juejin.im/post/5b9e8e396fb9a05d09654387
 
-## interview
-https://juejin.im/post/5ba34e54e51d450e5162789b
+<!-- ## interview
+https://juejin.im/post/5ba34e54e51d450e5162789b -->
 
 
 前端常用插件、工具类库汇总

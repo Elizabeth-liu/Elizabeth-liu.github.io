@@ -1,5 +1,93 @@
 # 算法
 
+## 栈
+```js
+class Stack {
+  constructor() {
+    this.stack = []
+  }
+  push(item) {
+    this.stack.push(item)
+  }
+  pop() {
+    this.stack.pop()
+  }
+  peek() {
+    return this.stack[this.getCount() - 1]
+  }
+  getCount() {
+    return this.stack.length
+  }
+  isEmpty() {
+    return this.getCount() === 0
+  }
+}
+```
+
+### 用两个栈实现一个队列
+队列的声明如下，请实现它的两个函数 appendTail 和 deleteHead ，分别完成在队列尾部插入整数和在队列头部删除整数的功能。(若队列中没有元素，deleteHead 操作返回 -1 )
+```js
+var CQueue = function() {
+    this.inStack = [];
+    this.outStack = [];
+};
+
+/**
+ * @param {number} value
+ * @return {void}
+ */
+CQueue.prototype.appendTail = function(value) {
+    this.inStack.push(value);
+};
+
+/**
+ * @return {number}
+ */
+CQueue.prototype.deleteHead = function() {
+    const { inStack, outStack } = this;
+    if (outStack.length) {
+        return outStack.pop();
+    } else {
+        while (inStack.length) {
+            outStack.push(inStack.pop());
+        }
+        return outStack.pop() || -1;
+    }
+};
+
+/**
+ * Your CQueue object will be instantiated and called as such:
+ * var obj = new CQueue()
+ * obj.appendTail(value)
+ * var param_2 = obj.deleteHead()
+ */
+```
+### 队列
+单链队列
+```js
+class Queue {
+  constructor() {
+    this.queue = []
+  }
+  enQueue(item) {
+    this.queue.push(item)
+  }
+  deQueue() {
+    return this.queue.shift()
+  }
+  getHeader() {
+    return this.queue[0]
+  }
+  getLength() {
+    return this.queue.length
+  }
+  isEmpty() {
+    return this.getLength() === 0
+  }
+}
+```
+
+
 ## 找出数组中重复的数字
 
 思路：
@@ -25,12 +113,12 @@ function findDuplicateNumber(array) {
 }
 ```
 
-http://louiszhai.github.io/2016/12/23/sort/
+<!-- http://louiszhai.github.io/2016/12/23/sort/ -->
 
-
+<!--
 ## 深拷贝
 
-https://juejin.im/post/5bc1ae9be51d450e8b140b0c
+https://juejin.im/post/5bc1ae9be51d450e8b140b0c -->
 
 
 ## 题目：leedcode 209
